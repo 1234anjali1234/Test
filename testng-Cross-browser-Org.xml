@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test thread-count="2" parallel="tests" name="test-runner-1">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.crm.OrganizationTest.CreateOrgWithType_BaseClass" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="2" parallel="tests" name="test-runner-2">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="com.crm.OrganizationTest.CreateOrgWithType_BaseClass" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+

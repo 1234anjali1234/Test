@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="2" name="test-runner-1" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.OrganizationTest.CreateOrgWithType_BaseClass"/>
+    </classes>
+  </test> <!-- test-runner-1 -->
+  <test thread-count="2" name="test-runner-2" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.OrganizationTest.CreateOrgWithType_BaseClass"/>
+    </classes>
+  </test> <!-- test-runner-2 -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite" parallel="tests">
+  <test thread-count="2"  parallel="tests" name="test-runner-1">
+    <classes>
+     
+      <class name="com.crm.OrganizationTest.CreateOrg_BaseClassTest"/>
+      <class name="com.crm.OrganizationTest.CreateOrgWithType_BaseClass"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="2"  parallel="tests" name="test-runner-2">
+    <classes>
+      <class name="com.crm.ContactTests.CreateContactsTest_BaseClass"/>
+      <class name="com.crm.ContactTests.CreateContactsAndChooseExistingOrganization_Base_Class_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

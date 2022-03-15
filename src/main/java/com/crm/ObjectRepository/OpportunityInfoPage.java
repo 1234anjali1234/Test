@@ -1,0 +1,45 @@
+package com.crm.ObjectRepository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.crm.GenericLibrary.WebDriverUtility;
+
+public class OpportunityInfoPage extends WebDriverUtility{
+
+	//Step1: Declaration
+	@FindBy(xpath = "//span[@class ='dvHeaderText']")
+	private WebElement headerText;
+
+	//Step2; Initialization
+	public OpportunityInfoPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+
+
+	//Step3: Utilization ---->Using Getters
+
+	public WebElement getHeaderText() 
+	{
+		return headerText;
+	}
+
+
+
+	//Business Library
+	public String OppNameInfo()
+	{
+		String OppInfo = headerText.getText();
+		return OppInfo;
+	}
+
+
+
+}
+
+
+

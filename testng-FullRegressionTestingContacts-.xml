@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Suite">
+<listeners>
+<listener class-name= "com.crm.GenericLibrary.ListnerImplementationClass"></listener>
+</listeners>
+  <test name="Test" thread-count="2" >
+    <classes>
+      <class name="com.crm.ContactTests.CreateContactsAndChooseExistingOrganization_Base_Class_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
